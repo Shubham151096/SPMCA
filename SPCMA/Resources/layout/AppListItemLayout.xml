@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_item"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:id="@+id/DeviceImage"
+        android:src="@drawable/defaultImg"
+        android:padding="5dp"
+        android:foregroundGravity="center"
+        android:contentDescription="@string/Img_Download_Issue"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/DeviceNameTxt"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:minHeight="40dp"
+        android:text="hello"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

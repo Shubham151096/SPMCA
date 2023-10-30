@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PCMA</string>
+    <string name="action_settings">Settings</string>
+    <string name="Welcome_Back">Welcome Back</string>
+    <string name="Please_Login">Please Login</string>
+    <string name="Img_Download_Issue">Image download issue</string>
+    <string name="Emailtxt">User name</string>
+    <string name="passwordTxt">Password</string>
+    <string name="LoginTxt">Login</string>
+    <string name="SignUpTxt">Sign up</string>
+    <string name="DontHaveAccTxt">Don\'t have an account</string>
+    <string name="ForgotPasswordTxt">Forgot Password</string>
+    <string name="PlsEnterEmailTxt">Please enter user name</string>
+    <string name="PlsEnterPassTxt">Please enter password</string>
+    <string name="LogoutTxt">Logout</string>
+	<string-array name="countries_array">
+		<item>Bahrain</item>
+		<item>Bangladesh</item>
+		<item>Barbados</item>
+		<item>Belarus</item>
+		<item>Belgium</item>
+		<item>Belize</item>
+		<item>Benin</item>
+	</string-array>
+</resources>

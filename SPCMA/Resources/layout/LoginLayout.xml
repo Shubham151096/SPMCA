@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="@string/Welcome_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeBack"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/AppColor1"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="@string/Please_Login"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AppName"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/AppColor1"
+        android:layout_gravity="center_horizontal"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        app:lottie_fileName="loginboy.json"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/Emailtxt"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittextdesign"
+        android:layout_height="50dp"
+        android:textSize="14sp"
+        android:id="@+id/EmailEditTxt"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:text="@string/PlsEnterEmailTxt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailErrTxt"
+        android:visibility="invisible"
+        android:textColor="@color/AppColor2"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittextdesign"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:id="@+id/PassContainerfrm"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="@string/passwordTxt"
+            android:inputType="textPassword"
+            android:background="@drawable/edittextwithicondesign"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_gravity="start"
+            android:id="@+id/PasswordEditTxt"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/hidepassword"
+            android:visibility="invisible"
+            android:layout_gravity="end| center_vertical"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/Img_Download_Issue"
+            android:id="@+id/hidePassImgBtn"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/showpassword"
+            android:layout_gravity="end| center_vertical"
+            android:visibility="visible"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/Img_Download_Issue"
+            android:id="@+id/showPassImgBtn"/>
+    </FrameLayout>
+
+        <TextView
+        android:text="@string/PlsEnterPassTxt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PassErrTxt"
+        android:visibility="invisible"
+        android:textColor="@color/AppColor2"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <TextView
+        android:text="@string/ForgotPasswordTxt"
+        android:textColor="@color/AppColor1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ForgotPasstxtBtn"
+        android:layout_gravity="right"
+        android:layout_marginBottom="20dp"/>
+
+
+    <Button
+        android:text="@string/LoginTxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:background="@drawable/buttondesign"
+        android:textColor="@android:color/white"
+        android:id="@+id/LoginBtn"
+        android:enabled="false"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="@string/DontHaveAccTxt"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:text="@string/SignUpTxt"
+            android:textColor="@color/AppColor1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignUptxtBtn" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
